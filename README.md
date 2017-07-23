@@ -36,18 +36,23 @@ For testing the REST APIs using postman:
 _________________________________________
 
 ____ To add user ____
+
 http://localhost:8080/user/addUser/dbUser
 
 ____ To get specific user's details ____
+
 http://localhost:8080/user/userById/1
 
 ____ To get users details who have the save name ____
+
 http://localhost:8080/user/userByName/dbUser
 
 ____ To save contacts realted to specific user ____
+
 http://localhost:8080/contacts/saveContacts/1
 
 and as a request body
+
 [{
 	"name" : "Tom",
 	"number":"123"
@@ -63,21 +68,27 @@ and as a request body
 }]
 
 ____ To get contacts by name ____
+
 http://localhost:8080/contacts/contactByName/Tom
 
 ____ To get contacts by number ____
+
 http://localhost:8080/contacts/contactByNum/123
 
 ____ To get contacts by name ____
+
 http://localhost:8080/contacts/contactByName/Tom
 
 ____ To get contacts related to specific user ____
+
 http://localhost:8080/contacts/contactByUser/1
 
 ____ To get specific contact by id ____
+
 http://localhost:8080/contacts/contactById/1
 
 ____ To update contact ____
+
 http://localhost:8080/contacts/updateContact/1
 
 and as a request body
