@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+    <include resource="org/springframework/boot/logging/logback/base.xml"/>
+
+    <appender name="FILE-ENGINE-PROD" class="ch.qos.logback.core.FileAppender">
+        <file>prodLog.log</file>
+        <encoder>
+            <pattern>%d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level %logger{35} - %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <appender name="FILE-ENGINE-DEV" class="ch.qos.logback.core.FileAppender">
+        <file>devLog.log</file>
+        <encoder>
+            <pattern>%d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level %logger{35} - %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <springProfile name="development">
+        <logger name="com.orange.monitor" level="DEBUG" additivity="false">
+            <appender-ref ref="FILE-ENGINE-DEV"/>
+        </logger>
+    </springProfile>
+    <springProfile name="production">
+        <logger name="com.orange.monitor" level="INFO" additivity="false">
+            <appender-ref ref="FILE-ENGINE-PROD"/>
+        </logger>
+    </springProfile>
+</configuration>

@@ -1,0 +1,1 @@
+insert into TEST_SCHEMA.USERS(NAME) values ('flyway test unit');

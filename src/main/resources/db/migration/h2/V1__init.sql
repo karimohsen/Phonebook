@@ -1,0 +1,15 @@
+CREATE TABLE IF NOT EXISTS users
+(
+  user_id INTEGER NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  name VARCHAR(255)
+);
+
+CREATE TABLE IF NOT EXISTS contact
+(
+  contact_id INTEGER NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  name VARCHAR(255),
+  number VARCHAR(255),
+  user_id INTEGER,
+ FOREIGN KEY(user_id)  references users(user_id) ON DELETE CASCADE
+);
+
