@@ -34,10 +34,11 @@ postman installed on your machine(to test RESTful API)
 
 ### Installing
 
-you just have to build the project using maven command : mvn clean install
-in cas you want to skip test use : mvn clean install -DskipTest
+You just have to build the project using maven command : mvn clean install
 
-then run the jar you got in your target : java -jar springboot-handson-1.0-SNAPSHOT
+In case you want to skip test use : mvn clean install -DskipTest
+
+Then run the jar you got in your target : java -jar springboot-handson-1.0-SNAPSHOT
 
 ## Test 
 
@@ -120,6 +121,4 @@ and as a request body
 * [logback](https://logback.qos.ch/) - For creating logs
 * [postman](https://chrome.google.com/webstore/detail/postman/fhbjgbiflinjbdggehcddcbncdddomop?hl=en) -For testing the REST Api
 
-contact me : karim.abdelmohsen.1992@gmail.com
-
-
+Contact me : karim.abdelmohsen.1992@gmail.com
