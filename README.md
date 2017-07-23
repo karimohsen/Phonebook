@@ -25,8 +25,11 @@ implement unit tests using spring’s junit + mockito
 ### Prerequisites
 
 Java 7 or 8 installed on your machine
+
 maven installed on your machine
+
 postgresql installed on your machine
+
 postman installed on your machine(to test RESTful API)
 
 ### Installing
