@@ -8,11 +8,17 @@ Reverse directory service that satisfies the following use cases:
 ## Getting Started
 
 2 Profiles (.yml files instead of .properties): Development and Production 
+
 Development profile will allow for debug level for logs using logback + allow connection to development database (H2 database)
+
 Production profile will allow for info level for logs using logback + allow connection to production database (postgre database)
+
 use jetty as an embedded server instead of tomcat
+
 Maven flyway plugin for DB migrations
+
 Lombok for entities
+
 implement unit tests using spring’s junit + mockito
 
 
