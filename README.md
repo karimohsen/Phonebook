@@ -1,8 +1,11 @@
 # Phone book
 
-Reverse directory service that satisfies the following use cases:
+Reverse directory service that satisfies the following use cases:-
+
 1.Upload user’s phonebook into DB
+
 2.Query user profile by number
+
 3.Query user profiles by name
 
 ## Getting Started
@@ -36,7 +39,7 @@ postman installed on your machine(to test RESTful API)
 
 You just have to build the project using maven command : mvn clean install
 
-In case you want to skip test use : mvn clean install -DskipTest
+In case you want to skip test use : mvn clean install -DskipTests
 
 Then run the jar you got in your target : java -jar springboot-handson-1.0-SNAPSHOT
 
